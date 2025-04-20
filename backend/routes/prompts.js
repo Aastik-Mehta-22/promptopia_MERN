@@ -9,7 +9,7 @@ const router = express.Router();
 router.post('/', async (req, res) => {
   const { heading, definition, userId } = req.body;
 
-    console.log(`POST /api/prompts received: ${JSON.stringify(req.body)}`); // debugging the request
+    // console.log(`POST /api/prompts received: ${JSON.stringify(req.body)}`); // debugging the request
   
   if (!heading || !definition || !userId) {
     return res.status(400).json({ message: 'Heading, definition, and userId are required' });

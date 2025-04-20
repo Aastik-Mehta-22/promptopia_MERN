@@ -13,7 +13,7 @@ function TopPromptsCard() {
     async function fetchTopPrompts() {
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:5001/api/prompts/top`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/prompts/top`);
         setPrompts(response.data.slice(0, 5));
       } catch (error) {
         setError('Failed to load prompts');
