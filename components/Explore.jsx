@@ -47,7 +47,7 @@ function Explore() {
   return (
     <SignedIn>
       <div className="container mx-auto p-6">
-        <h2 className="text-3xl font-bold text-center mb-6">Explore Prompts</h2>
+        <h2 className="text-5xl font-bold text-center mb-6 text-primary " style={{fontSize: 20}} >Explore Prompts</h2>
         <div className="mb-6">
           <input
             type="text"

@@ -50,7 +50,7 @@ function CreatePrompt() {
   return (
     <SignedIn>
       <div className="container mx-auto p-6">
-        <h2 className="text-3xl font-bold text-center mb-6">Create a New Prompt</h2>
+      <h2 className="text-5xl font-bold text-center mb-6 text-primary " style={{fontSize: 20}} >Create a new Prompt </h2>
         <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto">
           <div className="card-body">
             {success && (
@@ -96,6 +96,7 @@ function CreatePrompt() {
                   type="submit"
                   className="btn btn-primary"
                   disabled={loading}
+                  style={{marginTop: 10}}
                 >
                   {loading ? (
                     <span className="loading loading-spinner"></span>
