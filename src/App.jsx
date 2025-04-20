@@ -7,6 +7,7 @@ import Explore from '../components/Explore';
 import Footer from '../components/Footer';
 import './App.css';
 import Liked from '../components/Liked';
+import CreatePrompt from '../components/CreatePrompt';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -96,7 +97,7 @@ function App() {
         />
         <Route path="/explore" element={<Explore />} />
         
-        <Route path="/create" element={<SignedIn><div className="container mx-auto p-6">Create Prompt Page (TBD)</div></SignedIn>} />
+        <Route path="/create" element={<CreatePrompt/>} />
         <Route path="/liked" element={<Liked/>} />
       </Routes>
 
